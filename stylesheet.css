@@ -1,0 +1,80 @@
+body{   
+    text-align: center;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+
+}
+
+/*Definindo o tamanho dos quadrados*/
+.square {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+
+/*Criando os players*/
+
+/*Player "shield"*/
+
+.o{
+
+    position: relative;
+}
+
+.o:after{
+    cursor: auto;
+    position: absolute;
+    content: "\1F6E1";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Player "sword"*/
+
+.x{
+
+    position: relative;
+}
+
+.x:after{
+    cursor: auto;
+    position: absolute;
+    content: "\2694";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*Personalizando o botãoo de reiniciar o game*/
+#refresh{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+    border-style:hidden;
+    background-color: aquamarine;
+    font-style: oblique;
+    transition: background 0.5s;
+    
+}
+
+/*Deixando mais visivelmente lindo*/
+#refresh:hover,
+#refresh:focus{
+    background-color: palevioletred;
+    cursor: pointer;
+}
